@@ -1,0 +1,757 @@
+/* Global Font Settings */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem; /* Default font size */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 1.2em; /* Increase heading size */
+}
+
+/* Paragraphs */
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ccc;
+    font-size: 1.1rem; /* Increase paragraph font size */
+}
+
+/* Other Elements */
+.mh-header-info h2,
+.mh-header-info h4,
+.mh-about-inner h2,
+.mh-about-inner p,
+.mh-work-item h4,
+.mh-education-item h4,
+.mh-progress .progressbar-text,
+.pr-skill-name {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Linkek stílusa */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00bfff;
+}
+
+/* Címsorok */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.2em; /* Címsorok méretének növelése */
+}
+
+/* Szövegek */
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #ccc;
+    font-size: 1.1rem; /* Szövegek betűméretének növelése */
+}
+
+/* Globális szekció stílus */
+section {
+    padding: 120px 0; /* Függőleges padding növelése */
+}
+
+/* Home Section */
+.mh-home {
+    padding: 150px 0; /* Extra nagy padding a kezdő szekcióhoz */
+    background: #f8f9fa;
+}
+
+.mh-header-info {
+    text-align: left;
+}
+
+.mh-header-info h2 {
+    font-size: 3.5rem; /* Név méretének növelése */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ .mh-home .mh-header-info .mh-promo span {
+    background-color: #0bceaf;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+.mh-header-info h4 {
+    font-size: 2rem; /* Típus (pl. Software Developer) méretének növelése */
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.mh-header-info .contact-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.mh-header-info .contact-info li {
+    margin-bottom: 10px;
+    font-size: 1.3rem; /* Kapcsolati információk méretének növelése */
+    color: #fff; /* Szín fehérre állítása */
+}
+
+.mh-header-info .contact-info li i {
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.mh-header-info .social-icon {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.mh-header-info .social-icon li a {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon li a i {
+    font-size: 1.8rem; /* Ikonok méretének növelése */
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon li a:hover i {
+    transform: scale(1.2);
+    color: #00bfff;
+}
+
+.hero-img {
+    margin-top: 60px;
+}
+
+.hero-img .img-border {
+    border: 5px solid #000000;
+    border-radius: 50%;
+    padding: 25px; /* Kép körüli keret növelése */
+    display: inline-block;
+}
+
+.hero-img img {
+    border-radius: 50%;
+    max-width: 95%; /* Kép méretének növelése */
+    height: auto;
+}
+
+/* Home Section Background */
+.home-bg {
+    position: relative;
+    background: url('../images/pcwork.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 400px 0;
+    z-index: 1;
+}
+
+.home-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.mh-home .container {
+    position: relative;
+    z-index: 3;
+}
+.interactive-btn {
+    background: #0bceaf;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.mh-home .mh-header-info .mh-promo span {
+    background-color: #0bceaf;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+
+/* Fade Effektus */
+.mh-home .mh-header-info {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About Section */
+.mh-about {
+    padding: 120px 0; /* Függőleges padding növelése */
+    background-color: #111;
+    color: #fff;
+}
+
+.mh-about-inner h2 {
+    font-size: 3rem; /* Címsor méretének növelése */
+    margin-bottom: 20px;
+}
+
+.mh-about-inner p {
+    font-size: 1.3rem; /* Szöveg méretének növelése */
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.mh-about-tag ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mh-about-tag ul li span {
+    border: 1px solid #0bceaf;
+    padding: 6px 12px; /* Készségek körüli padding növelése */
+    border-radius: 4px;
+    font-size: 1.1rem; /* Készségek méretének növelése */
+}
+
+/* Experience Section */
+.mh-experience {
+    padding: 120px 0; /* Függőleges padding növelése */
+    background-color: #111;
+    color: #fff;
+}
+
+.mh-experience .section-title {
+    font-size: 2.5rem; /* Címsor méretének növelése */
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Work and Education Items */
+.mh-work-item, .mh-education-item {
+    background: #222;
+    padding: 25px; /* Boxok belső paddingjának növelése */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px; /* Boxok magasságának növelése */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mh-work-item:hover, .mh-education-item:hover {
+    transform: scale(1.7);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.mh-work-item h4, .mh-education-item h4 {
+    font-size: 1.8rem; /* Box címsorának méretének növelése */
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.mh-work-item h4 span, .mh-education-item h4 span {
+    font-size: 1.2rem;
+    color: #0bceaf;
+    font-weight: normal;
+}
+
+.mh-work-item .mh-eduyear, .mh-education-item .mh-eduyear {
+    font-size: 1.2rem; /* Évszámok méretének növelése */
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.mh-work-item .work-responsibility, .mh-education-item p {
+    list-style: none; /* Távolítsd el a lista pontokat */
+    margin: 0; /* Margók eltávolítása */
+    padding: 0; /* Padding eltávolítása */
+}
+
+/* Skills Section */
+.mh-skills {
+    padding: 120px 0; /* Függőleges padding növelése */
+    background-color: #111;
+    color: #fff;
+}
+
+.mh-skills .section-title {
+    font-size: 2.5rem; /* Címsor méretének növelése */
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.mh-professional-skill h3, .mh-professional-skills h3 {
+    font-size: 2rem; /* Készségek címsorának méretének növelése */
+    margin-bottom: 20px;
+    color: #0bceaf;
+}
+
+.each-skills .candidatos {
+    margin-bottom: 15px;
+}
+
+.each-skills .parcial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.each-skills .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.each-skills .nome {
+    font-size: 1.3rem; /* Technikai készségek nevének méretének növelése */
+    color: #fff;
+}
+
+.each-skills .percentagem-num {
+    font-size: 1.2rem; /* Technikai készségek százalékának méretének növelése */
+    color: #ccc;
+}
+
+.each-skills .progressBar {
+    width: 100%;
+    height: 12px; /* Progress bar magasságának növelése */
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.each-skills .progressBar .percentagem {
+    height: 100%;
+    background: #0bceaf;
+    border-radius: 5px;
+}
+
+/* Professional Skills Progress Circles */
+.mh-professional-progress {
+    list-style: none;
+    padding: 0;
+}
+
+.mh-professional-progress li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mh-progress {
+    width: 120px; /* Kör progress bar szélességének növelése */
+    height: 120px; /* Kör progress bar magasságának növelése */
+    margin: 0 auto 10px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.mh-progress svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.mh-progress path:nth-child(1) {
+    stroke: #eee;
+    stroke-width: 5;
+    fill: none;
+}
+
+.mh-progress path:nth-child(2) {
+    stroke: #0bceaf;
+    stroke-width: 5;
+    fill: none;
+    stroke-dasharray: 298.493, 298.493;
+    stroke-dashoffset: calc(298.493 - (298.493 * var(--progress)) / 100);
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.mh-progress .progressbar-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem; /* Kör progress bar százalékának méretének növelése */
+    color: #fff;
+}
+
+.pr-skill-name {
+    font-size: 1.2rem; /* Kör progress bar alatti szöveg méretének növelése */
+    color: #ccc;
+}
+
+/* Address stílus egységesítése */
+.contact-info address {
+    font-style: normal; /* Alapértelmezett dőlt stílus eltávolítása */
+    margin: 0; /* Extra margók eltávolítása */
+    display: inline; /* Egységes megjelenés a többi elemmel */
+    color: inherit; /* Örökölje a szöveg színét a szülőelemtől */
+}
+
+/* Future Section */
+.mh-future {
+    padding: 150px 0; /* Függőleges padding növelése */
+    background-color: #111; /* Sötét háttérszín */
+    color: #fff; /* Szöveg színe */
+}
+
+.mh-future .section-title h3 {
+    font-size: 3rem; /* Címsor méretének növelése */
+    margin-bottom: 40px; /* Távolság a címsor alatt */
+    color: #0bceaf; /* Zöld szín a címsorhoz */
+    text-transform: uppercase; /* Nagybetűs stílus */
+    letter-spacing: 1.5px; /* Betűk közötti távolság */
+    text-align: center; /* Középre igazítás */
+}
+
+.mh-future-box {
+    background-color: #222; /* Doboz háttérszíne */
+    border-radius: 10px; /* Lekerekített sarkok */
+    padding: 30px; /* Belső margó növelése */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Erősebb árnyék */
+    display: flex; /* Flexbox a tartalomhoz */
+    flex-wrap: nowrap; /* Ne törje meg a sort */
+    gap: 30px; /* Távolság a szöveg és a kép között */
+    align-items: center; /* Kép és szöveg középre igazítása */
+    min-height: 400px; /* Fix magasság a teljes szöveghez */
+}
+
+.mh-future-box img {
+    max-width: 50%; /* Kép szélességének korlátozása */
+    height: auto; /* Automatikus magasság */
+    border-radius: 10px; /* Kép sarkainak lekerekítése */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Árnyék a kép körül */
+    object-fit: cover; /* Kép méretezése a dobozhoz */
+}
+
+.mh-future-box p {
+    font-size: 1.5rem; /* Szöveg méretének növelése */
+    color: #ccc; /* Szöveg színe */
+    line-height: 2; /* Sorok közötti távolság növelése */
+    margin: 0; /* Margók eltávolítása */
+}
+
+/* New Section */
+.mh-new-section {
+    padding: 120px 0; /* Függőleges padding */
+    background-color: #111; /* Sötét háttérszín */
+    color: #fff; /* Szöveg színe */
+}
+
+.mh-new-section .section-title h3 {
+    font-size: 2.5rem; /* Címsor mérete */
+    margin-bottom: 30px; /* Távolság a tartalom előtt */
+    color: #fff; /* Címsor színe */
+    text-transform: none; /* Eltávolítja a nagybetűs formázást */
+    text-align: center; /* Középre igazítás */
+    letter-spacing: 1px; /* Betűk közötti távolság */
+}
+
+.mh-new-section img {
+    max-width: 100%; /* Kép maximális szélessége */
+    height: auto; /* Automatikus magasság */
+    border-radius: 10px; /* Lekerekített sarkok */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Árnyék a kép körül */
+}
+
+.mh-new-section .info-list {
+    list-style: none; /* Lista stílus eltávolítása */
+    padding: 0;
+    font-size: 1.3rem; /* Szöveg méretének növelése */
+    color: #ccc;
+    line-height: 1.8; /* Sorok közötti távolság */
+}
+
+.mh-new-section .info-list li {
+    margin-bottom: 10px; /* Listaelemek közötti távolság */
+}
+
+.mh-new-section .info-list ul {
+    list-style: disc; /* Al-lista stílusa */
+    margin-left: 20px; /* Behúzás az al-listához */
+    color: #ccc;
+}
+
+.mh-new-section .highlight {
+    color: #0bceaf; /* Zöld szín az előzőekben használt árnyalat */
+    font-weight: bold; /* Félkövér szöveg */
+}
+
+/* Additional Information Section */
+.mh-additional-info {
+    padding: 150px 0; /* Increased vertical padding */
+    background-color: #111; /* Dark background */
+    color: #fff; /* Text color */
+}
+
+.mh-additional-info .section-title h3 {
+    font-size: 3rem; /* Larger title size */
+    margin-bottom: 40px; /* Space below the title */
+}
+
+.info-box {
+    background-color: #222; /* Box background color */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center-align content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+}
+
+.info-box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+.info-box i {
+    color: #0bceaf; /* Icon color */
+}
+
+.info-box h5 {
+    font-size: 1.8rem; /* Box title size */
+    margin-bottom: 10px; /* Space below the title */
+    color: #0bceaf; /* Title color */
+}
+
+.info-box p {
+    font-size: 1.2rem; /* Box text size */
+    color: #ccc; /* Text color */
+}
+
+/* Portfolio Section */
+.mh-portfolio {
+    padding: 150px 0; /* Increased vertical padding */
+    background-color: #111; /* Dark background */
+    color: #fff; /* Text color */
+}
+
+.mh-portfolio .section-title h3 {
+    font-size: 3rem; /* Larger title size */
+    margin-bottom: 40px; /* Space below the title */
+}
+
+.mh-portfolio .portfolio-card {
+    background-color: #222; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Clip content outside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    justify-content: space-between; /* Space between image and text */
+    height: 100%; /* Ensure all cards have the same height */
+}
+
+.mh-portfolio .portfolio-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+.mh-portfolio .portfolio-card img {
+    width: 100%; /* Full width */
+    height: 250px; /* Fixed image height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-bottom: 5px solid #0bceaf; /* Bottom border */
+}
+
+.mh-portfolio .portfolio-info {
+    padding: 20px; /* Inner padding */
+    text-align: center; /* Center-align text */
+}
+
+.mh-portfolio .portfolio-info h5 {
+    font-size: 1.8rem; /* Larger project title size */
+    margin-bottom: 15px; /* Space below the title */
+    color: #0bceaf; /* Green color */
+}
+
+.mh-portfolio .portfolio-info p {
+    font-size: 1.2rem; /* Description size */
+    color: #ccc; /* Text color */
+    margin-bottom: 20px; /* Space below the description */
+}
+
+.mh-portfolio .portfolio-info a {
+    color: #fff; /* Button text color */
+    border: 1px solid #0bceaf; /* Button border */
+    padding: 10px 20px; /* Button size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease, color 0.3s ease; /* Hover animation */
+}
+
+.mh-portfolio .portfolio-info a:hover {
+    background: #0bceaf; /* Hover background color */
+    color: #111; /* Hover text color */
+}
+
+/* Animációk */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.animate-slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Média lekérdezések */
+@media (max-width: 768px) {
+    section {
+        padding: 80px 0; /* Kisebb padding mobilon */
+    }
+
+    .mh-header-info h2 {
+        font-size: 2.5rem; /* Név méretének csökkentése mobilon */
+    }
+
+    .mh-header-info h4 {
+        font-size: 1.5rem; /* Típus méretének csökkentése mobilon */
+    }
+
+    .mh-header-info .contact-info li {
+        font-size: 1.1rem; /* Kapcsolati információk méretének csökkentése mobilon */
+    }
+
+    .mh-header-info .social-icon li a {
+        font-size: 1rem; /* Szociális ikonok méretének csökkentése mobilon */
+    }
+
+    .hero-img {
+        margin-top: 30px; /* Kép margójának csökkentése mobilon */
+    }
+
+    .hero-img .img-border {
+        padding: 15px; /* Kép körüli keret csökkentése mobilon */
+    }
+
+    .mh-about-inner h2 {
+        font-size: 2.5rem; /* Címsor méretének csökkentése mobilon */
+    }
+
+    .mh-about-inner p {
+        font-size: 1.1rem; /* Szöveg méretének csökkentése mobilon */
+    }
+
+    .mh-experience .section-title {
+        font-size: 2rem; /* Címsor méretének csökkentése mobilon */
+    }
+
+    .mh-work-item, .mh-education-item {
+        height: auto; /* Boxok magasságának automatikus beállítása mobilon */
+    }
+
+    .mh-work-item h4, .mh-education-item h4 {
+        font-size: 1.5rem; /* Box címsorának méretének csökkentése mobilon */
+    }
+
+    .mh-work-item .mh-eduyear, .mh-education-item .mh-eduyear {
+        font-size: 1rem; /* Évszámok méretének csökkentése mobilon */
+    }
+
+    .mh-work-item .work-responsibility, .mh-education-item p {
+        font-size: 1rem; /* Szöveg méretének csökkentése mobilon */
+    }
+
+    .mh-skills .section-title {
+        font-size: 2rem; /* Címsor méretének csökkentése mobilon */
+    }
+
+    .mh-professional-skill h3, .mh-professional-skills h3 {
+        font-size: 1.5rem; /* Készségek címsorának méretének csökkentése mobilon */
+    }
+
+    .mh-progress {
+        width: 100px; /* Kör progress bar szélességének csökkentése mobilon */
+        height: 100px; /* Kör progress bar magasságának csökkentése mobilon */
+    }
+
+    .mh-progress .progressbar-text {
+        font-size: 1.2rem; /* Kör progress bar százalékának méretének csökkentése mobilon */
+    }
+
+    .pr-skill-name {
+        font-size: 1rem; /* Kör progress bar alatti szöveg méretének csökkentése mobilon */
+    }
+
+    .mh-future .section-title h3 {
+        font-size: 2rem; /* Címsor méretének csökkentése mobilon */
+    }
+
+    .mh-future-box {
+        flex-direction: column; /* Doboz tartalmának függőleges elrendezése mobilon */
+        align-items: center; /* Tartalom középre igazítása mobilon */
+    }
+
+    .mh-future-box img {
+        max-width: 90%; /* Kép maximális szélességének csökkentése mobilon */
+    }
+}
+
+/* Typewriter highlight effect */
+.mh-future #future-typewriter .highlight {
+    color: #0bceaf; /* Zöld szín */
+    display: inline;
+}
+
+.mh-future #future-typewriter {
+    line-height: 1.8; /* Sorok közötti távolság */
+    white-space: pre-wrap; /* Több sor támogatása */
+    min-height: 200px; /* Fix magasság a szövegterülethez */
+}
+
+
